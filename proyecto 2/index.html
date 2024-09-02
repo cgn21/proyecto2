@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compra las mejores zapatillas de Nike, Adidas y New Balance.">
+    <title>Snaker Planet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="assets/world-icon.png" alt="Icono del Mundo" class="header-icon">
+            <h1>Snaker Planet</h1>
+            <p>La moda en tus pies. Explora nuestras colecciones.</p>
+            <button id="open-modal">Filtrar Productos</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="product-container" class="product-container">
+            <!-- Los productos se inyectarán aquí mediante JavaScript -->
+        </div>
+    </main>
+
+    <!-- Modal para filtros -->
+    <div id="filter-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Filtrar Productos</h2>
+            <form id="filter-form">
+                <label for="brand">Marca:</label>
+                <input type="text" id="brand" name="brand" placeholder="Nike, Adidas, New Balance">
+
+                <label for="max-price">Precio Máximo:</label>
+                <input type="number" id="max-price" name="max-price" placeholder="200">
+
+                <button type="submit">Aplicar Filtros</button>
+                <button type="button" id="clear-filters">Limpiar Filtros</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Snaker Planet. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
